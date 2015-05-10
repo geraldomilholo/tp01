@@ -1,0 +1,205 @@
+<style>
+	body{
+		background-repeat: repeat-y;
+	}
+	
+	#back_ground{
+    	background-image: url("ImagensSitePessoal/Background_Site.jpg");
+	}
+	
+	#cabecalho h1{
+		color: #A52A2A;
+		font-family: 'Ravie';
+		size: 100px;
+		padding-top: 40px;
+		padding-left: 0px;
+		font-weight: normal;
+		text-align: center;
+	}	
+		
+	#profile{
+		float: left;
+		width: 150px;
+		height: 150px;
+		background: white;
+		border: 2px solid white; 
+		-webkit-box-shadow: 0 3px 10px #ccc; 
+		-moz-box-shadow: 0 3px 10px #666;
+		margin-right: 30px;
+	}
+	
+	#barra_sup{
+		margin-top: -8px;
+		margin-left: -8px;
+		height: 40px;
+		width: 100%;
+		z-index: +1;
+		background-color: #ABA8A8;
+	}
+	
+	#logo{
+		margin-left: 8px;
+		width:100px; 
+		height:35px;
+		border-radius: 20px;
+	}
+	
+	#relogio{
+		margin-left: 500px;
+		width:30px; 
+		height:30px;
+	}
+		
+	#lamp{
+		margin-left: 5px;
+		width:30px; 
+		height:30px;
+	}
+	
+	#hr{
+		margin-top: 10px;
+		margin-right: 50px;
+		float: right;
+		text-align: center;
+		color:#FFFFFF;
+	}
+	
+	#menu{
+		height: 50px;
+		margin-left: 170px;
+	}
+	
+	#menu ul {
+		position: relative;
+		top: 10px;
+		padding:0px;
+		margin:0px;
+		list-style:none;
+		font:Tahoma;
+		font-size: 15px;
+		font-weight:bold;
+	}
+
+	#menu ul li {
+		display: inline;
+	}
+
+	#menu ul li a {
+		background-color:#FFFFFF;
+		color: #333;
+		text-decoration: none;
+		border-bottom:3px solid #FFFFFF;
+		padding: 2px 30px;
+		float:left;
+		border-bottom:1px solid #6D6D6D;
+	}
+
+	#menu ul li a:hover {
+		background-color:#FFFFFF;
+		color: #6D6D6D;
+		border-bottom:3px solid #EA0000;
+	}
+	
+	#corpo{
+		position: relative;
+		padding-top: 0px;
+		padding-right: 10px; 
+		padding-left: 10px;
+		padding-bottom:10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 850px;
+		font-weight: normal;
+		line-height: 30px;
+		background-color: rgba(255, 255, 255, 1);
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+	
+	.imgproj{
+		position: relative;
+		right: -280px;
+		left: auto;
+		width:250px; 
+		height:150px;
+		margin: 0 20px 0 0; 
+		background: white;
+		border: 10px solid white; 
+		-webkit-box-shadow: 0 3px 10px #ccc; 
+		-moz-box-shadow: 0 3px 10px #ccc;
+		-webkit-transform: rotate(5deg); 
+		-moz-transform: rotate(5deg);
+		-webkit-transition: all 0.7s ease; 
+		-moz-transition: all 1s ease;		
+	}
+	
+	.imgproj:hover {
+		-webkit-transform: rotate(-1deg); 
+		-moz-transform: rotate(1deg);
+		-webkit-box-shadow: 0 3px 10px #666; 
+		-moz-box-shadow: 0 3px 10px #666;
+	}
+
+	.imgproj:focus {
+		outline: none;
+		-webkit-transform: rotate(-3deg) scale(2.5); 
+		-moz-transform: rotate(-3deg) scale(2.5);
+		-webkit-box-shadow: 0 3px 10px #666; 
+		-moz-box-shadow: 0 3px 10px #666;
+		z-index: 9999;
+	}
+	
+	#facebook_icon{
+		width: 35px;
+        height: 35px;
+		margin-left: 340px;
+		margin-right: 5px;
+	}
+
+	#gmail_icon{
+		width: 35px;
+        height: 35px;
+		margin-right: 5px;
+	}
+	
+	#twitter_icon{
+		position: absolute;
+		width: 38px;
+        height: 38px;
+		margin-top: -1px;
+	}
+	
+	#twitter_icon:hover{
+		cursor: pointer;
+	}
+	
+	#gmail_icon:hover{
+		cursor: pointer;
+	}
+		
+	a:link, a:visited {
+		text-decoration: none;
+		color: #EA0000;
+	}
+	a:hover {
+		text-decoration: none; 
+		color: #6D6D6D;
+	}
+	a:active {
+		text-decoration: none
+		color: #6D6D6D;
+	}
+	
+	#googlemaps {
+        width: 500px;
+        height: 400px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    
+	#previsao_tempo{
+		position: relative;
+        margin-left: 20px;
+	}
+	
+</style>

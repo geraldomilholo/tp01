@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Site Pessoal - Geraldo Milholo - Curriculum</title>
+	<meta charset="UTF-8">
+	<script src="SitePessoalJS.js"></script>
+	<link rel="stylesheet" content="text/css" href="SitePessoalcss.css">
+	
+	 <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+     
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+       
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+ 
+      // Função q carrega os dados e desenha o grafico em pizza 
+      function drawChart() {
+ 
+      // Criar tipo data table
+      var data = new google.visualization.DataTable();
+     //no caso do grafico  pizza possui duas colunas, com duas colunas
+      data.addColumn('string', 'Linguagem');
+      data.addColumn('number', 'Conhecimento Percentual');
+     //linha da tabela
+     data.addRows([
+        ['C/C++', 3],
+        ['Java', 3],
+        ['Groovy', 4], 
+        ['Python', 2],
+        ['HTML', 3]
+      ]);
+ 
+      var options = {'legend':{position: 'left', textStyle: {color: 'black', fontSize: 12}},
+                     'slices': {3: {color: 'black'}},
+              		 'width':500, 
+                     'height':200};
+ 
+      // desenho do grafico
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+</head>
+
+<body id="back_ground">
+
+<div id="barra_sup">
+	<a href="Home.html"><img id="logo" src="ImagensSitePessoal\profile.png"></a>
+	<img id="relogio" src="ImagensSitePessoal\relogio.png" onclick="date()">
+	<img id="lamp" src="ImagensSitePessoal\lampoff.png" onclick="on_off()">
+	<p id="hr"></p>
+</div>
+
+<div id="corpo">
+	<div id="cabecalho">
+		<h1>Esse é o site pessoal do Geraldo Milholo</h1>
+	</div>
+	
+	<hr>
+
+	<div id="menu">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Projetos.html">Projetos</a></li>
+			<li><a href="Curriculum.html">Curriculum</a></li>
+			<li><a href="Contato.html">Contato</a></li>
+		</ul>
+	</div>
+	
+	<h3 align="center">Curriculum</h3> 
+	<h4>Perfil Profissional</h4>
+	Profissional comprometido, dinâmico, com bom relacionamento em grupo, facilidade de adaptação, organizado, que sempre busca novos desafios, 
+	experiências e adquirir conhecimentos na área da tecnologia da informação.
+
+	<h4>Formação</h4>
+	Graduando em Engenharia de Computação, CEFET-MG.
+	
+	<h4>Experiência Profissional</h4>
+	- Viridis Soluções Energetica
+	<br> 
+	
+	<h4>Linguagem de Programação vs Conhecimento (1-5)
+	<p id="chart_div" style="width:600; height:400"></p>
+	<br> Caso esteja interessado, você pode visualizar e fazer o download completo do meu curriculum no link abaixo: <br> 	
+	<a href="Curriculo - GeraldoMilholo.pdf" target="_blank">Curriculum</a>
+</div>
+</body>
+</html>
